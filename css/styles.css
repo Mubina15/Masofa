@@ -1,0 +1,94 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.user {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    max-width: 120px;
+    margin-top: 50px;
+    margin: 0;
+}
+
+input {
+    outline: none;
+    background-color: rgb(209, 194, 194);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 62px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #ffffff;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+    background-color: rgb(44, 40, 40);
+}
+
+label:active:after {
+	width: 30px;
+}
+
+
+body {
+	justify-content: center;
+	align-items: center;
+	height: 97vh;
+}
+
+.togle {
+    background-color: rgb(37, 39, 39);
+    color: rgb(223, 209, 209);
+}
